@@ -6,6 +6,7 @@ namespace ProjectName.Models
   {
     public DbSet<CLassOne> ClassOne { get; set; }
     public DbSet<ClassTwo> ClassTwo { get; set; }
+    public DbSet<ClassOneClassTwo> ClassOneClassTwo { get;  set; }
 
     public ProjectNameContext(DbContextOptions options) : base(options) { }
 
