@@ -4,10 +4,10 @@ namespace ProjectName.Models
   {
     public ClassTwo()
     {
-      this.ClassOnes = new HashSet<ClassOne>();
+      this.JoinEntites = new HashSet<ClassOneClassTwo>();
     }
 
     public int ClassTwoId { get; set; }
-    public virtual ICollection<ClassOne> ClassOnes { get; set; }
+    public virtual ICollection<ClassOneClassTwo> JoinEntites { get; set; }
   }
 }
