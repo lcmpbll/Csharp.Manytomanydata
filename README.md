@@ -35,10 +35,10 @@ _This is an MVC application that was built using C#. The purpose of this applica
 <details>
 <summary><strong>Initial Setup</strong></summary>
 <ol>
-<li>Copy the git repository url: https://github.com/GarrettHays/BestRestaurants.Solution
+<li>Copy the git repository url: https://github.com/lcmpbll/ProjectName
 <li>Open a shell program and navigate to your desktop.
 <li>Clone the repository for this project using the "git clone" command and including the copied URL.
-<li>While still in the shell program, navigate to the root directory of the newly created file named "BestRestaurants.Solution".
+<li>While still in the shell program, navigate to the root directory of the newly created file named "ProjectName.Solution".
 <li>From the root directory, navigate to the "BestRestuarants" directory.
 <li>Move onto "SQL Workbench" instructions below to re-create database necessary to run this project.
 <br>
@@ -47,9 +47,9 @@ _This is an MVC application that was built using C#. The purpose of this applica
 <details>
 <summary><strong>SQL Workbench Configuration</strong></summary>
 <ol>
-<li>Create an appsetting.json file in the "BestRestaurants" directory of the project*  
-   <pre>BestRestaurants.Solution
-   └── BestRestaurants
+<li>Create an appsetting.json file in the "ProjectName" directory of the project*  
+   <pre>ProjectName.Solution
+   └── ProjectName
     └── appsetting.json</pre>
 <li> Insert the following code** : <br>
 
@@ -62,27 +62,31 @@ _This is an MVC application that was built using C#. The purpose of this applica
 <small>**note: if you plan to push this cloned project to a public-facing repository, remember to add the appsettings.json file to your .gitignore before doing so.</small>
 
 <li>Once "appsettings.json" file has been created, navigate back to SQL Workbench.
-<li>Import the database named "best_restaurants.sql" from the root directory of the project.<br><br>
-How to Import a Database:
-<ol> 
-  <li>Open SQL Workbench.
-  <li>Navigate to "Administration" tab in SQL Workbench.
-  <li>Click "Data Import/Restore".
-  <li>Select the radio button "Import from Self-Contained File" and include file path to the sql file of this project you cloned to your machine.
-  <li>In "Default Schema to be Imported to" click "New".
-  <li>Name the schema "best_restaurants" then click "OK".
-  <li>Once named, switch to "Import Progress" tab and click "Start Import".
-  
+
+
 </details>
 
 <details>
 <summary><strong>To Run</strong></summary>
 Navigate to:  
-   <pre>BestRestaurants.Solution
-   └── <strong>BestRestaurants</strong></pre>
+   <pre>ProjectName.Solution
+   └── <strong>ProjectName</strong></pre>
 
-Run ```$ dotnet restore``` in the console.<br>
-Run ```$ dotnet run``` in the console
+Run `$ dotnet restore` in the console.<br>
+Run `$ dotnet database update` in the console.<br>
+Run `$ dotnet run` in the console
+</details>
+<br>
+
+<details>
+<summary><strong>For Testing</strong></summary>
+Navigate to  
+    <pre>ProjectName.Solution
+    ├── ProjectName
+    └── <strong>ProjectName.Tests</strong></pre>
+
+Run `$ dotnet test` in the console
+
 </details>
 <br>
 
