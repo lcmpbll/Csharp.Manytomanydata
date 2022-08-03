@@ -8,11 +8,11 @@
 
 ## Table of Contents
 
-**[Technologies Used](#technologies-used)  
+[Technologies Used](#technologies-used)  
 [Description](#description)  
 [Setup/Installation Requirements](#setup-and-installation-requirements)  
 [Known Bugs](#known-bugs)  
-[License](#license)**
+[License](#License)
 
 ## Technologies Used
 
@@ -100,4 +100,4 @@ This program was built using *`Microsoft .NET SDK 5.0.401`*, and may not be comp
 
 _Feel free to reach out via [Github](github.com.lcmpbll) to provide feedback on this project or to view my other projects._
 
-[Copyright](LICENSE) (c) _07-28-2022_ _Liam Campbell_
+[Copyright](/LICENSE) (c) _07-28-2022_ _Liam Campbell_
